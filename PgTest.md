@@ -1,4 +1,4 @@
-#Pg Admin 4 query's / Learn Challenge.
+# Pg Admin 4 query's / Learn Challenge.
 
 #Contributors
 
