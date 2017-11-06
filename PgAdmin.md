@@ -102,3 +102,23 @@
 
 
 ### How big are the continents in term or area and population?
+
+  SELECT continent, SUM(surfacearea), SUM(population) FROM country GROUP BY continent;
+
+
+### Which region has the highest average gnp?
+
+  SELECT region, SUM(gnp) FROM country GROUP BY region ORDER BY SUM(gnp) desc LIMIT 1;
+
+
+### Who is the most influential head of state measured by population?
+
+  SELECT headofstate, SUM(population) FROM country WHERE headofstate != '' GROUP BY headofstate ORDER BY SUM(population) desc;
+
+
+### Who is the most influential head of state measured by surface area?
+
+  SELECT headofstate, SUM(surfacearea) FROM country WHERE headofstate != '' GROUP BY headofstate ORDER BY SUM(surfacearea) desc;
+
+
+### 
