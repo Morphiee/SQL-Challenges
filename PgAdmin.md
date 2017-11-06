@@ -100,6 +100,7 @@
   WITH sumlil10 as (SELECT surfacearea FROM country ORDER BY surfacearea asc LIMIT 10)
   SELECT SUM(surfacearea) FROM sumlil10;
 
+# Group By // GROUP BY this
 
 ### How big are the continents in term or area and population?
 
@@ -121,4 +122,4 @@
   SELECT headofstate, SUM(surfacearea) FROM country WHERE headofstate != '' GROUP BY headofstate ORDER BY SUM(surfacearea) desc;
 
 
-### 
+###
